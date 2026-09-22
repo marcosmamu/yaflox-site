@@ -1,0 +1,23 @@
+COMO TROCAR AS FONTES NO index.html
+═══════════════════════════════════════════════════════════════════
+
+No seu index.html existem TRES linhas parecidas com estas, dentro do
+<head>. Elas mandam o navegador buscar as fontes no Google:
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap">
+
+APAGUE AS TRES e ponha ESTA UMA no lugar:
+
+  <link rel="stylesheet" href="/assets/fontes.css">
+
+E so. As familias e os pesos sao exatamente os mesmos — Cormorant
+Garamond 400/500/600, IBM Plex Mono 400/500, Manrope 300 a 700. O que
+muda e de ONDE os arquivos vem.
+
+POR QUE AS DUAS PRIMEIRAS LINHAS TAMBEM SAEM
+
+`preconnect` manda o navegador abrir conexao antecipada com um
+servidor. Deixa-las apontando para o Google faria o navegador abrir
+duas conexoes que ninguem vai usar, em toda visita.
