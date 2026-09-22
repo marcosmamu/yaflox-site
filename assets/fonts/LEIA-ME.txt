@@ -1,0 +1,21 @@
+CORMORANT — arquivos de fonte para o yaflox.com
+
+O QUE SAO ESTES ARQUIVOS
+
+A Cormorant do Google e uma fonte VARIAVEL: um unico arquivo cobre
+todos os pesos de 300 a 700. Conferido por hash — os arquivos com nome
+de peso diferente tem conteudo identico.
+
+  cormorant.woff2       o arquivo de verdade (latin)
+  cormorant-ext.woff2   o mesmo, com os acentos do latin-ext
+
+  cormorant-300.woff2 ... cormorant-700.woff2
+      copias do primeiro, com os nomes por peso. Existem so para o caso
+      de o index.html pedir assim. Se ele pedir so um nome, apague os
+      outros — sao bytes repetidos no servidor.
+
+LICENCA
+
+SIL Open Font License 1.1 (OFL.txt, incluida). A fonte pode ser usada,
+redistribuida e embutida, inclusive comercialmente. A licenca precisa
+acompanhar os arquivos — e por isso que ela esta aqui.
