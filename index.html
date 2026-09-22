@@ -99,6 +99,7 @@
     width: clamp(104px, 21vh, 190px);
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: end;
   }
 
   .words > div {
@@ -120,7 +121,11 @@
     padding-left: 0.16em;
   }
 
-  .word.gold { color: var(--ouro); }
+  /* o L ganha 12% — correcao otica: sozinho na coluna, ele parece menor do que e */
+  .word.gold {
+    color: var(--ouro);
+    font-size: clamp(20px, 3.8vh, 36px);
+  }
 
   /* ---------- lado direito: o feixe ---------- */
 
@@ -270,6 +275,7 @@
     .mark { width: 132px; height: 132px; }
     .words { width: 132px; }
     .word { font-size: 21px; }
+    .word.gold { font-size: 23.5px; }
     .tick { height: 13px; }
     .rings { width: 380px; height: 380px; }
     .meaning {
